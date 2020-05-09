@@ -1,0 +1,140 @@
+・ヘッダーは固定（追随する）でお願いします。〇
+
+・SP版はPC版を参考に作成する（ハンバーガーメニュー設置など） 　
+ヒント：余白やフォント周りに特に気を配ってみてください。 〇
+
+・よくある質問のアコーディオンはデフォルトは１つ目のみ開いている状態で（js利用）〇
+
+・制作実績部分はスライダーになるので、swiperを利用してください（実務で一番使います）　〇
+
+・AOS.jsなどで各々の要素をふわっと表示させる　〇
+
+・「お問い合わせ」ボタンを押すと、お問い合わせフォームにスムーススクロールする　〇
+
+・XDのフォントは「ヒラギノ角ゴ ProN」ですが、フォントは Google Fontsの「Noto sans jp」を利用するようにお願いします　〇
+
+・余裕があれば、以下いずれか使用し、お問い合わせフォームを動作するようにしてみる 　
+①Googleフォームとの紐づけ↓ 　
+https://shogo-log.com/google-form-ajax/ 　
+②Responsive Mailform 　
+③WordPress化してフォーム設置
+
+
+
+・Google Fontsの「Noto sans jp」読み込み
+①html 
+→　<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+②CSS　
+→　body {　font-family: 'Noto Sans JP', sans-serif;　}
+
+
+
+background-color  #eefbfb
+sub-ttl-color     #3BA6C9
+btn-color         linear-gradient(to right, #FA41CC, #6020B0);
+gradient          linear-gradient(to right, #05A5FA, #63FBD7);
+
+
+==============================================================================
+
+・paddingの認識
+widthを1000px、paddingを左右に20pxずつ指定すると
+今まで
+→　　width 　　padding     width
+　　1000px - 20px -20px = 960px
+　　　　　　　　　　　　　　　↑padding分減る
+認識後
+→　　width 　　padding     width
+　　1000px - 20px -20px = 1040px
+　　　　　　　　　　　　　　　↑padding分増える
+
+もしwidth(height)を960pxにしたいなら" border-box : box-sizing"にするとできる。
+box-sizingにすることによってborderまでの長さがwidth(height)となる。
+
+==============================================================================
+
+・アコーディオンメニュー
+https://webdesignday.jp/inspiration/technique/css/5670/
+
+・レスポンシブにすることを考えるとimgのwidthは100％が望ましい。
+　→画面サイズを狭くしていったとき画像のwidthが固定されていると思わぬ弊害が...
+
+・tableタグの使い方
+https://webliker.info/02035/#toc_12
+
+.blog-content 余白
+https://haniwaman.com/calc/
+
+・swiperの使い方
+https://garigaricode.com/swiper/
+https://www.willstyle.co.jp/blog/724/
+
+・formの作り方
+https://webliker.info/79009/
+
+・スムーススクロール(cssのみ)
+https://blog-and-destroy.com/24226
+→Chrome(Android含む)とFirefoxのみ
+IE11、MS Edge、Safari　非対応
+
+・スムーススクロール(javascript)
+https://haniwaman.com/smooth-scroll-js/
+https://sakic.jp/blog/web/smooth-scroll
+
+・グローバルメニュー
+https://haniwaman.com/responsive-menu/#i-9
+
+・ハンバーガーメニュー(ドロワーメニュー)
+http://program-memo.com/archives/423#i
+
+・【CSS】ハンバーガーメニュー実装サンプル集
+https://125naroom.com/web/2958
+
+・【CSS】buttonタグのスタイルを初期化する方法
+https://prawn-cocktail.com/blog/631/
+
+・JavaScriptプラグインAOSの使い方
+https://webkore.site/aos/
+
+==============================================================================
+
+
+
+==============================================================================
+
+2回目で使ったコード
+・ハンバーガーメニュー(ドロワーメニュー)改
+https://www.aiship.jp/knowhow/archives/31639
+※コードが雑　注意
+
+・アコーディオンメニュー
+https://webdesignday.jp/inspiration/technique/css/5670/
+
+.blog 余白
+https://haniwaman.com/calc/
+
+・スライダー_swiper(javascript_CDN)
+https://garigaricode.com/swiper/
+
+・スムーススクロール_smooth-scroll.js(javascript_jsFolder)
+https://haniwaman.com/smooth-scroll-js/
+※アンカーをsectionに忘れず
+
+・スクロールアニメーション_AOS(javascript_CDN)
+https://webkore.site/aos/
+
+==============================================================================
+
+
+==============================================================================
+
+調整で使ったコード
+・CSSアニメーション
+https://www.webdesignleaves.com/pr/css/css_basic_07.html
+
+・ハンバーガーメニュー(bglayerクリックでメニュー閉じ)
+https://web-seikatsu.hatenablog.jp/entry/slidemenu　◎
+http://oishiisource.com/?p=71　△
+
+==============================================================================
